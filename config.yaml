@@ -1,0 +1,21 @@
+# Upsun configuration, generated using AI at: 2026-07-23T17:14:57.230Z
+# AI can make mistakes. Please modify this file to suit your needs.
+applications:
+  app:
+    type: composable:25.11
+    stack:
+      runtimes:
+        - nodejs@24
+    hooks:
+      build: |
+        set -ex
+    web:
+      commands:
+        start: sleep infinity
+      locations:
+        /:
+          root: ''
+          index:
+            - index.html
+          expires: 1h
+          scripts: false
